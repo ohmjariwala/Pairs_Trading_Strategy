@@ -19,3 +19,4 @@
 - Application of quantitative techniques
 - Risk management and controlled trade execution
 - Strategic analysis and decision-making
+- Libraries used: datetime, math, matplotlib, numpy, sklearn.linear_model, statsmodel.tsa.stattools, yfinance
