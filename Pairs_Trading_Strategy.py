@@ -58,7 +58,7 @@ for stock1 in stocks:
 cointegrated_values= cointegrated
 
 # Identify the most cointegrated stock by finding the max cointegration within the dictionary
-most_cointegrated_stock = max(cointegrated_values, key=lambda x: len(cointegrated_values[x])) # MSFT is the most cointegrated of the stocks in this list
+most_cointegrated_stock = max(cointegrated_values, key=lambda x: len(cointegrated_values[x]))
     
 # Lower p values are indicative of stronger cointegration
 # Finding the most cointegrated stocks and keeping the stock's most cointegrated counterpart
@@ -80,7 +80,7 @@ for stock in stocks:
     volatilities[stock] = volatility
 
 # Identify the most volatile stock by finding the max within the dictionary
-most_volatile_stock = max(volatilities, key=lambda x: volatilities[x]) #NVDA is the most volatile of the stocks in this list
+most_volatile_stock = max(volatilities, key=lambda x: volatilities[x])
 
 returns= data.pct_change().dropna()
 returns= np.log1p(returns)
